@@ -1,6 +1,6 @@
 import { postgres } from "./deps.js";
 import * as todoServices from "./services/todoService.js";
-import { cacheMethodCalls } from "./utils/cacheUtil.js.js";
+import { cacheMethodCalls } from "./util/cacheUtil.js";
 
 const cachedItemService = cacheMethodCalls(todoServices, ["addTodo"]);
 
